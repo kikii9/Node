@@ -8,6 +8,7 @@ fs.readFile(path.join(__dirname, './index.html'),'utf-8',(err, data) => {
     if (err) 
         return console.error(err)
     // 定义三个方法
+    
     resolveCSS(data)
     resolveJS(data)
     resolveHTML(data)
